@@ -1,0 +1,20 @@
+<div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+<div *ngIf="packages.length > 0; else loading">
+  <div *ngFor="let package of packages" class="package-item">
+    <h3>{{ package.name }}</h3>
+    <p><strong>Description:</strong> {{ package.description }}</p>
+    <button (click)="viewDetails(package.id)">View Details</button>
+    <button (click)="purchasePackage(package.id)">Purchase</button>
+  </div>
+</div>
+<ng-template #loading>
+  <p>Loading packages...</p>
+</ng-template>
+
+
+
+
+
+
+
+  

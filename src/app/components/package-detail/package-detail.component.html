@@ -1,0 +1,17 @@
+<div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+<div *ngIf="package" class="package-detail">
+  <h2>{{ package.name }}</h2>
+  <p><strong>Description:</strong> {{ package.description }}</p>
+  <p><strong>Data:</strong> {{ package.data }} GB</p>
+  <p><strong>Minutes:</strong> {{ package.minutes }}</p>
+  <p><strong>SMS:</strong> {{ package.sms }}</p>
+  <p><strong>Price:</strong> {{ package.price | currency }}</p>
+  <button (click)="goToPackages()">Back to Packages</button>
+  <button (click)="purchasePackage()">Purchase</button>
+</div>
+
+
+
+
+
+  

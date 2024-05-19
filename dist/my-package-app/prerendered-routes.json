@@ -1,0 +1,9 @@
+{
+  "routes": [
+    "/",
+    "/login",
+    "/packages",
+    "/profile",
+    "/register"
+  ]
+}

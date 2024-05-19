@@ -1,0 +1,12 @@
+<nav>
+  <button (click)="navigateToHome()">Home</button>
+  <button (click)="navigateToPackages()">Packages</button>
+  <button *ngIf="!isLoggedIn" (click)="navigateToLogin()">Login</button>
+  <button *ngIf="!isLoggedIn" (click)="navigateToRegister()">Register</button>
+  <button *ngIf="isLoggedIn" (click)="navigateToProfile()">Profile</button>
+  <button *ngIf="isLoggedIn" (click)="logout()">Logout</button>
+</nav>
+
+
+
+  
